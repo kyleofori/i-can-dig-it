@@ -1,19 +1,38 @@
 package com.detroitlabs.icandigit;
 
 import android.app.Activity;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.detroitlabs.icandigit.fragments.MapFragment;
 
 public class MainActivity extends Activity {
+
+    MapFragment mapFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+
+        // Create new fragments and transaction
+        mapFragment = new MapFragment();
+
+        // Commit the transaction
+        fragmentTransaction.add(R.id.fragment_container, mapFragment);
+        fragmentTransaction.commit();
     }
 
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
