@@ -4,6 +4,7 @@
     <string name="app_name">I Can Dig It</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="treasure0">gold</string>
     <string name="treasure1">silver</string>
