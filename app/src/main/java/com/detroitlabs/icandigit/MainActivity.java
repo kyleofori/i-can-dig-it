@@ -6,11 +6,11 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.detroitlabs.icandigit.fragments.MapFragment;
+import com.detroitlabs.icandigit.fragments.DigFragment;
 
 public class MainActivity extends Activity {
 
-    MapFragment mapFragment;
+    DigFragment digFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,10 +20,10 @@ public class MainActivity extends Activity {
         FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
 
         // Create new fragments and transaction
-        mapFragment = new MapFragment();
+        digFragment = new DigFragment();
 
         // Commit the transaction
-        fragmentTransaction.add(R.id.fragment_container, mapFragment);
+        fragmentTransaction.add(R.id.fragment_container, digFragment);
         fragmentTransaction.commit();
     }
 
