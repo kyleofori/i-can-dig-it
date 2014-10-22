@@ -7,6 +7,6 @@ import java.util.ArrayList;
  */
 public class FindStuff {
     public static void startDig() {
-
+        System.out.println("YOU DUG SOEMTHING");
     }
 }

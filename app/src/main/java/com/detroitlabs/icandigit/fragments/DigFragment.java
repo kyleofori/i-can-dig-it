@@ -19,7 +19,6 @@ public class DigFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_map, null);
-        googleMap =  ((com.google.android.gms.maps.MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
 
         // Check if button has been pressed
         Button button = (Button) rootView.findViewById(R.id.button_digit);
